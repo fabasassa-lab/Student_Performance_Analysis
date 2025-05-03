@@ -70,6 +70,13 @@ Penggunaan dashboard ini memperkuat komitmen perusahaan terhadap pengelolaan sum
 
 ![HR Dashboard](good_sawo-dashboard.png)
 
+## Menjalankan Sistem Machine Learning
+Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
+
+```
+
+```
+
 ## Conclusion
 
 Berdasarkan analisis data dalam dashboard, ditemukan insight berikut:
