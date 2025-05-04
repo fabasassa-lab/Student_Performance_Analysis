@@ -74,7 +74,14 @@ Penggunaan dashboard ini memperkuat komitmen perusahaan terhadap pengelolaan sum
 Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
 
 ```
+# Clone the repository
+git clone <repository-url>
 
+# Install necessary packages
+pip install numpy pandas xgboost sqlalchemy scikit-learn joblib streamlit
+
+# Run the Streamlit app
+streamlit run app.py
 ```
 
 Link Student Performance Prediction (Streamlit) : [Streamlit App](https://studentperformanceanalysis-n5yfnn72v5g4ukudrcsgem.streamlit.app/)
