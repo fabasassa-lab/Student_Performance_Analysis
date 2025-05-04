@@ -60,7 +60,7 @@ Dashboard ini berfungsi sebagai alat strategis berbasis data untuk membantu piha
 ![HR Dashboard](good_sawo-dashboard.png)
 
 ## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
+Untuk menjalankan protoype sistem machine learning yang telah dibuat, ikuti langkah di bawah ini:
 
 ```
 # Clone the repository
