@@ -50,11 +50,9 @@ conda deactivate
 
 Link Student Performance Tableau Public Dashboard : [Student Performance Dashboard](https://public.tableau.com/app/profile/fauzihan.bagus/viz/StudentPerformanceAnalysis_17462562479090/Student)
 
-Dashboard ini menyajikan berbagai visualisasi analitik yang komprehensif terkait Human Resources (HR) Analytics, meliputi data mengenai attrition rate, distribusi karyawan berdasarkan departemen, rentang usia, jenis kelamin, latar belakang pendidikan, serta tingkat kepuasan kerja.
-Dashboard ini berfungsi sebagai alat strategis untuk memberikan insight berbasis data kepada manajemen dalam memahami dinamika tenaga kerja di organisasi secara lebih mendalam.
+Dashboard ini menyajikan berbagai visualisasi analitik yang komprehensif terkait performa dan keberlangsungan studi mahasiswa di Jaya Jaya Institut, khususnya dalam memantau dan menganalisis tingkat dropout mahasiswa. Informasi yang ditampilkan mencakup total mahasiswa, jumlah dan persentase dropout, jumlah lulusan, serta distribusi dropout berdasarkan usia, gender, status pernikahan, dan program studi yang diambil.
 
-Dengan pemetaan visual yang sistematis, manajemen dapat dengan cepat mengidentifikasi area kritis dengan tingkat turnover tinggi, menganalisis faktor penyebab, serta merancang program intervensi yang lebih efektif dan terfokus untuk meningkatkan retensi, kepuasan, dan keterlibatan karyawan.
-Penggunaan dashboard ini memperkuat komitmen perusahaan terhadap pengelolaan sumber daya manusia berbasis data (data-driven HR management), sekaligus mendukung pengambilan keputusan yang lebih cepat, akurat, dan strategis guna menghadapi tantangan tenaga kerja yang semakin dinamis.
+Dashboard ini berfungsi sebagai alat strategis berbasis data untuk membantu pihak manajemen akademik dalam memahami profil dan karakteristik mahasiswa yang berisiko tinggi untuk dropout. Dengan visualisasi yang sistematis dan interaktif, manajemen dapat dengan cepat mengidentifikasi kelompok usia, jurusan, atau status sosial tertentu yang memiliki tingkat dropout tinggi, sehingga dapat dirancang intervensi dini seperti bimbingan akademik atau dukungan psikososial.
 
 ![HR Dashboard](good_sawo-dashboard.png)
 
@@ -78,23 +76,23 @@ Link Student Performance Prediction (Streamlit) : [Streamlit App](https://studen
 
 Berdasarkan analisis data dalam dashboard, ditemukan insight berikut:
 
-1. **Departemen R&D memiliki tingkat attrition tertinggi sebesar 56,12%**.
-Hal ini menunjukkan adanya tantangan signifikan dalam mempertahankan karyawan di R&D, kemungkinan disebabkan oleh tekanan target penjualan yang tinggi, persaingan industri yang ketat, atau kurangnya jalur pengembangan karir yang jelas.
-2. **Karyawan berusia 25–34 tahun menjadi kelompok dengan tingkat attrition tertinggi sebesar 47%**.
-Kelompok usia ini biasanya terdiri dari profesional muda yang aktif mencari peluang pertumbuhan karir, kompensasi lebih baik, atau keseimbangan kehidupan kerja yang lebih ideal.
-3. **Gender juga menjadi faktor penting, dengan karyawan laki-laki menyumbang attrition lebih tinggi dibanding perempuan**.
-Hal ini bisa mengindikasikan adanya perbedaan kebutuhan, kepuasan kerja, atau peluang karir antara gender yang perlu ditangani secara lebih spesifik.
-4. **Kepuasan kerja berpengaruh besar terhadap tingkat attrition**.
-Job role seperti Sales Executive dan Laboratory Technician memperlihatkan tingkat kepuasan yang rendah, sedangkan Research Scientist relatif lebih puas. Hal ini mengisyaratkan perlunya perbaikan manajemen beban kerja, reward system, dan peluang pengembangan di role yang lebih rentan terhadap ketidakpuasan.
-5. **Bidang pendidikan Life Sciences paling terdampak attrition**.
-Ini menandakan adanya ketidakcocokan antara ekspektasi lulusan bidang ini dengan realita pekerjaan yang ditawarkan perusahaan, atau kurangnya jalur pengembangan karir yang sesuai.
+1. **Tingkat dropout mahasiswa mencapai 32,55% dari total 3.174 mahasiswa**.
+Angka ini menunjukkan bahwa hampir sepertiga mahasiswa tidak menyelesaikan studinya, menandakan adanya masalah serius dalam retensi dan keberlangsungan pendidikan di institusi.
+2. **Mahasiswa berusia di bawah 20 tahun mendominasi kasus dropout (288 orang), disusul kelompok usia 20–29 tahun (468 orang)**.
+Hal ini menunjukkan bahwa mahasiswa di awal masa studi rentan mengalami kesulitan beradaptasi atau mengalami hambatan akademik/psikologis yang menyebabkan dropout.
+3. **Status pernikahan ‘single’ memiliki tingkat dropout paling tinggi, yaitu sebanyak 860 orang**.
+Ini mengindikasikan bahwa mayoritas dropout berasal dari mahasiswa yang belum menikah, kemungkinan besar adalah mahasiswa baru atau masih muda yang mungkin menghadapi tekanan pribadi, finansial, atau kurangnya dukungan sosial.
+4. **Gender tidak menunjukkan perbedaan signifikan, dengan dropout hampir merata antara pria (51%) dan wanita (49%)**.
+Artinya, faktor gender bukanlah penentu utama dropout, sehingga intervensi lebih perlu difokuskan pada faktor lain seperti usia, jurusan, atau kondisi sosial.
+5. **Program studi 'Management (evening attendance)' dan 'Management' mencatat dropout tertinggi, masing-masing 136 dan 134 orang**.
+Hal ini dapat mengindikasikan adanya beban kuliah yang tidak seimbang dengan aktivitas harian, khususnya bagi mahasiswa kelas malam yang kemungkinan juga bekerja, sehingga mengalami kelelahan atau kurang fokus dalam studi.
 
 ### Rekomendasi Action Items
 
 Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
 
-- Buat program pengembangan karir, mentoring, dan keseimbangan kerja-hidup (work-life balance) yang lebih menarik untuk usia **25-34**.
-- Desain program onboarding yang lebih ramah bagi generasi muda dan program pensiun bertahap (phased retirement) untuk karyawan senior.
-- Buat program peningkatan kepuasan kerja seperti pelatihan tambahan, perbaikan beban kerja, atau reward system yang lebih baik di role **Sales Executive** dan **Laboratory Technician**.
-- Evaluasi kembali kebijakan rekrutmen, program onboarding, dan program retention untuk latar belakang pendidikan **Life Sciences** dan **Medical**.
-- Teliti lebih lanjut penyebab spesifik mengapa banyak karyawan pria keluar, misal terkait beban kerja, peluang promosi, atau fleksibilitas kerja.
+- Tingkatkan sistem bimbingan akademik dan konseling untuk mahasiswa usia di bawah **20 tahun** dan **20–29 tahun**, karena dua kelompok ini menyumbang dropout terbanyak. Fokuskan pada transisi dari SMA ke perguruan tinggi serta manajemen stres dan waktu belajar.
+- Kembangkan program dukungan sosial dan finansial untuk mahasiswa dengan status **'single'**, karena kelompok ini menyumbang dropout tertinggi. Bantuan dapat berupa beasiswa, dukungan psikologis, atau kegiatan komunitas untuk memperkuat keterikatan mereka dengan kampus.
+- Tinjau kembali kurikulum dan beban studi program studi **Manajemen (terutama kelas malam)**, serta evaluasi kebutuhan mahasiswa yang bekerja sambil kuliah. Pertimbangkan fleksibilitas jadwal atau metode pembelajaran hybrid untuk meningkatkan retensi.
+- Adakan survei lanjutan untuk mengeksplorasi lebih dalam alasan dropout di tiap program studi, terutama pada jurusan dengan angka dropout tinggi seperti **Management, Nursing, dan Journalism & Communication**.
+- Bangun sistem pemantauan dini (early warning system) berbasis data akademik, kehadiran, dan partisipasi mahasiswa untuk mendeteksi potensi dropout sejak dini, sehingga intervensi bisa dilakukan lebih cepat dan tepat sasaran.
