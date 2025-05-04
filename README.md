@@ -48,7 +48,7 @@ conda deactivate
 
 ## Business Dashboard
 
-Link HR Analysis Tableau Public Dashboard : [HR Analysis Dashboard](https://public.tableau.com/app/profile/fauzihan.bagus/viz/HRAnalysis_17457576868510/HRANALYTICSDASHBOARD)
+Link Student Performance Tableau Public Dashboard : [Student Performance Dashboard](https://public.tableau.com/app/profile/fauzihan.bagus/viz/StudentPerformanceAnalysis_17462562479090/Student)
 
 Dashboard ini menyajikan berbagai visualisasi analitik yang komprehensif terkait Human Resources (HR) Analytics, meliputi data mengenai attrition rate, distribusi karyawan berdasarkan departemen, rentang usia, jenis kelamin, latar belakang pendidikan, serta tingkat kepuasan kerja.
 Dashboard ini berfungsi sebagai alat strategis untuk memberikan insight berbasis data kepada manajemen dalam memahami dinamika tenaga kerja di organisasi secara lebih mendalam.
