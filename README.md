@@ -77,6 +77,8 @@ Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Se
 
 ```
 
+Link Student Performance Prediction (Streamlit) : [Streamlit App](https://studentperformanceanalysis-n5yfnn72v5g4ukudrcsgem.streamlit.app/)
+
 ## Conclusion
 
 Berdasarkan analisis data dalam dashboard, ditemukan insight berikut:
