@@ -41,8 +41,11 @@ cd nama-repository
 
 ```
 conda create -n env-attrition python=3.10
+
 conda activate env-attrition
+
 pip install pandas numpy matplotlib seaborn scikit_learn tensorflow joblib streamlit xgboost
+
 conda deactivate
 ```
 
