@@ -2,39 +2,32 @@
 
 ## Business Understanding
 
-Jaya Jaya Maju merupakan perusahaan multinasional yang telah berdiri sejak tahun 2000 dan kini mempekerjakan lebih dari 1.000 karyawan yang tersebar di seluruh wilayah Indonesia. Seiring pertumbuhan perusahaan yang semakin besar, tantangan dalam pengelolaan sumber daya manusia pun semakin kompleks. Salah satu permasalahan utama yang dihadapi adalah tingginya angka attrition rate, yakni rasio jumlah karyawan yang keluar terhadap total karyawan, yang telah mencapai lebih dari 10%.
-
-Tingginya attrition rate ini menimbulkan berbagai risiko serius bagi perusahaan, seperti menurunnya produktivitas, meningkatnya biaya rekrutmen dan pelatihan, serta terganggunya stabilitas organisasi. Menyadari urgensi permasalahan ini, manajemen HR berinisiatif untuk melakukan analisis lebih lanjut guna mengidentifikasi faktor-faktor utama yang mendorong keluarnya karyawan dari perusahaan.
-
-Untuk mendukung proses analisis tersebut, manajemen juga mengusulkan pembuatan sebuah business dashboard yang dapat digunakan untuk memantau secara real-time berbagai indikator penting terkait tenaga kerja, seperti distribusi karyawan, tingkat kepuasan kerja, latar belakang pendidikan, serta departemen dan kelompok usia yang paling rentan terhadap attrition. Dataset terkait kondisi karyawan pun telah disediakan guna menunjang analisis dan pengembangan dashboard tersebut.
-
-Melalui pendekatan berbasis data ini, diharapkan Jaya Jaya Maju dapat mengembangkan strategi retensi karyawan yang lebih efektif, memperbaiki kepuasan kerja, serta meningkatkan daya saing perusahaan di masa depan.
+Jaya Jaya Institut, sebagai institusi pendidikan yang telah beroperasi sejak tahun 2000 dan memiliki reputasi baik, menghadapi tantangan serius terkait tingginya tingkat siswa yang dropout (berhenti kuliah sebelum lulus). Meskipun banyak lulusan sukses yang dihasilkan, angka putus studi menjadi indikator negatif yang berdampak pada kualitas, citra, dan keberlanjutan institusi dalam jangka panjang.
 
 ### Permasalahan Bisnis
 
-1. **Tingginya Tingkat Attrition (Turnover) Karyawan**.
-Rasio attrition yang mencapai lebih dari 10% menunjukkan bahwa perusahaan kehilangan karyawan dalam jumlah signifikan, yang berpotensi mengganggu produktivitas dan stabilitas operasional.
-2. **Kurangnya Pemahaman Terhadap Faktor Penyebab Attrition**.
-Perusahaan belum memiliki analisis mendalam mengenai faktor-faktor apa saja (seperti usia, departemen, gender, pendidikan, atau kepuasan kerja) yang paling berpengaruh terhadap tingginya tingkat keluar masuk karyawan.
-3. **Ketidakmampuan dalam Memantau Kinerja dan Kondisi Tenaga Kerja Secara Real-Time**.
-Saat ini perusahaan belum memiliki sistem dashboard yang dapat memvisualisasikan data tenaga kerja secara cepat dan akurat, sehingga sulit untuk melakukan pemantauan berkelanjutan dan pengambilan keputusan berbasis data.
-4. **Kesulitan Mengembangkan Strategi Retensi Karyawan yang Tepat**.
-Tanpa data dan pemetaan yang jelas mengenai sumber masalah, upaya perusahaan dalam mengurangi attrition dan meningkatkan kepuasan kerja berisiko menjadi tidak efektif atau tidak tepat sasaran.
+1. **Tingginya Tingkat Dropout Mahasiswa**.
+Tingkat mahasiswa yang keluar sebelum menyelesaikan studi menunjukkan angka yang mengkhawatirkan, yang dapat berdampak negatif pada reputasi institusi, menurunkan akreditasi, serta mengurangi pendapatan dari biaya pendidikan.
+2. **Kurangnya Pemahaman Terhadap Faktor Penyebab Dropout**.
+Pihak institusi belum memiliki analisis komprehensif mengenai faktor-faktor utama yang menyebabkan mahasiswa berhenti kuliah, seperti latar belakang ekonomi, performa akademik, kondisi sosial, atau motivasi pribadi.
+3. **Ketidakmampuan dalam Memprediksi Mahasiswa yang Berisiko Dropout**.
+Tidak adanya sistem atau alat bantu berbasis data untuk memantau dan mengidentifikasi mahasiswa yang berisiko tinggi dropout membuat intervensi pencegahan sulit dilakukan secara tepat waktu dan tepat sasaran.
+4. **Kesulitan Menyusun Strategi Intervensi dan Bimbingan yang Efektif**.
+Tanpa pemetaan yang jelas terhadap profil risiko mahasiswa, institusi kesulitan dalam merancang program pendampingan, bimbingan akademik, atau dukungan psikologis yang tepat untuk menekan angka dropout.
 
 ### Cakupan Proyek
 
-- Mengolah dan menganalisis dataset karyawan perusahaan Jaya Jaya Maju.
-- Melakukan eksplorasi data untuk menemukan pola spesifik dalam attrition berdasarkan kategori demografis dan job role tertentu.
+- Mengolah dan menganalisis dataset mahasiswa dari Jaya Jaya Institut.
+- Melakukan eksplorasi data untuk menemukan pola spesifik dalam dropout berdasarkan kategori demografis, status keuangan, dan performa akademik.
 - Pembuatan Business Dashboard yang mencakup : 
-  - Attrition Rate keseluruhan dan per departemen
-  - Distribusi karyawan berdasarkan usia, gender, dan bidang pendidikan
-  - Tingkat kepuasan kerja per job role
-  - Trend attrition berdasarkan waktu
-- Pemberian Rekomendasi Bisnis
+  - Tingkat dropout keseluruhan dan per program studi
+  - Distribusi mahasiswa berdasarkan usia, status pernikahan, dan status beasiswa
+  - Trend dropout berdasarkan usia
+- Pemberian Rekomendasi Bisnis untuk strategi pencegahan dropout berdasarkan temuan data.
 
 ### Persiapan
 
-Sumber data: [Employee Data](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv)
+Sumber data: [Student Performance Data](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
 
 #### Setup environment
 
@@ -47,15 +40,10 @@ cd nama-repository
 ```
 
 ```
-conda create --name main-ds python=3.10
-conda activate main-ds
-pip install pandas numpy matplotlib seaborn scikit_learn tensorflow joblib gdown
-```
-
-#### Run prediction.py
-
-```
-python prediction.py
+conda create -n env-attrition python=3.10
+conda activate env-attrition
+pip install pandas numpy matplotlib seaborn scikit_learn tensorflow joblib streamlit xgboost
+conda deactivate
 ```
 
 ## Business Dashboard
